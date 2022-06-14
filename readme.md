@@ -10,7 +10,12 @@
 
 ## Como rodar o projeto?
 
-- Passo 1: Criar
+- Passo 1: Criar a base de dados,
 
+- Passo 2: Criar tabela funcionarios,
 
-go get github.com/lib/pq
+- Passo 3: Colocar dados na tabela,
+
+- Passo 4: Execute o comando "go run main.go";
+
+> obs: Uilize o arquivo query.sql para ter um exemplo de como criar a base de dados
