@@ -1,0 +1,53 @@
+{{define "index"}}- 
+{{template "head"}}
+{{template "navbar"}}
+
+<body>
+    <div class="container">
+        <section class="card">
+            <div>
+                <table aria-label="" class="table table-striped table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Sobrenome</th>
+                            <th>CPF</th>
+                            <th>Data de Nascimento</th>
+                            <th>Salario</th>
+                            <th>Cargo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{range .}}
+                        <tr>
+                            <td>{{.Nome}}</td>
+                            <td>{{.Sobrenome}}</td>
+                            <td>{{.Cpf}}</td>
+                            <td>{{.DataNascimento}}</td>
+                            <td>{{.Salario}}</td>
+                            <td>{{.Cargo}}</td>
+                            <td><a href="/update?id={{.Id}}" class="btn btn-info">Editar</a></td>
+                            <td><button onclick="onDelete('{{.Id}}')" class="btn btn-danger">Deletar</button></td>
+                        </tr>
+                        {{end}}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <div class="card-footer">
+            <a href="/create" class="btn btn-primary mb-2">Adicionar funcionário</a>
+        </div>
+    </div>
+</body>
+
+<script>
+    function onDelete(id) {
+        let resposta = confirm("Tem certeza que deseja deletar este funcionário?")
+        if (resposta) {
+            window.location = "/delete?id=" + id
+        }
+    }
+</script>
+ 
+</html>
+{{end}}
