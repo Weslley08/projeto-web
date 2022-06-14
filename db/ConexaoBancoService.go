@@ -6,7 +6,7 @@ import (
 )
 
 func ConectaBancoDados() *sql.DB {
-	con := "user=weslley dbname=n2-web password=123 host=localhost sslmode=disable"
+	con := "user=seu_user dbname=n2-web password=sua_senha host=localhost sslmode=disable"
 	db, erro := sql.Open("postgres", con)
 	if erro != nil {
    		panic(erro.Error())
