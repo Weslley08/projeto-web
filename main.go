@@ -9,5 +9,5 @@ import (
 func main() {
 	Rotas.CarregarRotas()
 	http.ListenAndServe(":8000", nil)
-	fmt.Println("Servidor iniciado na porta 8080")
+	fmt.Println("Servidor iniciado na porta 8000")
 }
