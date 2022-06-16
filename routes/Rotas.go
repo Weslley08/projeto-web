@@ -7,8 +7,9 @@ import (
 
 func CarregarRotas() {
 	http.HandleFunc("/", controllers.FindAll)
-//	http.HandleFunc("/id", controllers.FindByCpf)
-//	http.HandleFunc("/create", controllers.Create)
-//	http.HandleFunc("/update", controllers.Update)
-//	http.HandleFunc("/delete", controllers.Delete)
+	http.HandleFunc("/new", controllers.New)
+	http.HandleFunc("/insert", controllers.Insert)
+	http.HandleFunc("/edit", controllers.Edit)
+	http.HandleFunc("/update", controllers.Update)
+	http.HandleFunc("/delete", controllers.Delete)
 }

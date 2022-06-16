@@ -1,0 +1,73 @@
+{{define "New"}}
+{{template "head"}}
+{{template "navbar"}}
+
+<div class="container">
+
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-5">Novo funcionario</h1>
+                <p class="lead">Insira os detalhes</p>
+            </div>
+        </div>
+        <form method="POST" action="insert">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="cpf">Cpf:</label>
+                        <input type="text" name="cpf" class="form-control" step="0.01">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="DataNascimento">Data de Nascimento:</label>
+                        <input type="text" name="DataNascimento" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="salario">Salario:</label>
+                        <input type="text" name="salario" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="cargo">Cargo:</label>
+                        <input type="text" name="cargo" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" value="salvar" class="btn btn-success">Salvar</button>
+            <a class="btn btn-info" href="/">Voltar</a>
+        </form>
+    </body>
+
+</html>
+</div>
+</body>
+
+</html>
+{{end}}

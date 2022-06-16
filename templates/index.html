@@ -1,4 +1,4 @@
-{{define "index"}} 
+{{define "Index"}} 
 {{template "head"}}
 {{template "navbar"}}
 
@@ -26,7 +26,7 @@
                             <td>{{.DataNascimento}}</td>
                             <td>{{.Salario}}</td>
                             <td>{{.Cargo}}</td>
-                            <td><a href="/update?id={{.Id}}" class="btn btn-info">Editar</a></td>
+                            <td><a href="/edit?id={{.Id}}" class="btn btn-info">Editar</a></td>
                             <td><button onclick="onDelete('{{.Id}}')" class="btn btn-danger">Deletar</button></td>
                         </tr>
                         {{end}}
@@ -35,7 +35,7 @@
             </div>
         </section>
         <div class="card-footer">
-            <a href="/create" class="btn btn-primary mb-2">Adicionar funcionário</a>
+            <a href="/new" class="btn btn-primary mb-2">Adicionar funcionário</a>
         </div>
     </div>
 </body>
