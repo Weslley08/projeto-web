@@ -19,3 +19,9 @@
 - Passo 4: Execute o comando "go run main.go";
 
 > obs: Uilize o arquivo query.sql para ter um exemplo de como criar a base de dados
+
+### Alunos
+
+- Weslley Jonathan C. Santana da Silva (202003661)
+- Paulo Henrique da Silva Lucena (202002587)
+- Caio César Chalegre Bezerra (202002769)
